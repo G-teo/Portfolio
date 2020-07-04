@@ -305,7 +305,7 @@ html,body{
   /* margin-bottom: 30px; */
   /* background-color: red; */
   position: relative;
-}
+} 
 .work-overlay{
   position: absolute;
   top: 0px;
@@ -317,9 +317,10 @@ html,body{
   opacity: 0;
   color: #000;
   text-decoration: none;
-}
+} 
 .work-content{
   text-align: center;
+  padding-top: 20%;
   /* margin-top: 10px; */
 }
 .work-content::after{
