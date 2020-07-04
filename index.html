@@ -1,0 +1,299 @@
+<!DOCTYPE html> 
+<html lang="ja">
+  <head>
+    <meta charaset="utf-8">
+    <title>"恭平のポートフォリオサイト"</title>
+    <link rel="icon" href="image/favicon.ico"> 
+    <meta name="description" content="Teo's portfolio site">
+    <link rel="stylesheet" href="styles.css">
+    <!-- レスポンシブ対応 -->
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- formrun -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <!-- 文字 -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+  </head>
+  
+  <body>
+    <!-- welcome -->
+    <div id="welcome">
+      <div id="welcome-img"><!-- <img id="welcome-image" src="image/welcome.jpg"> --></div>
+      <div id="welcome-message">
+        <div id="welcome-word">Welcome to Teo's Portfolio Site</div>
+        <div id="welcome-link">GET IN TOUCH</div>
+      </div>
+    </div> 
+    <div class="body-container">
+      <div id="contents">
+        <!-- header -->
+        <header id="header">
+          <div class="header-top">
+            <div class="header-logo">
+              <a href="#">
+                <!-- ロゴの場所 -->
+                <img src="image/terayama-logo.png" alt="terayama_logo">
+              </a>
+            </div>
+            <!--  -->
+            <nav class="header-nav">
+              <ul class="header-nav-ul">
+                <li class="header-nav-list"><a href="#about-title">About</a></li>
+                <li class="header-nav-list"><a href="#works-title">Works</a></li>
+                <li class="header-nav-list"><a href="#contact-title">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- hidden-nav -->
+            <div id="hidden-header-menu"><span class="fas fa-bars"></span></div>
+            <nav id="hidden-header-nav">
+              <ul>
+                <li class="hidden-header-nav-list"><a href="#about-title">About</a></li>
+                <li class="hidden-header-nav-list"><a href="#works-title">Works</a></li>
+                <li class="hidden-header-nav-list"><a href="#contact-title">Contact</a></li>
+              </ul>
+              </nav>
+            <!--  -->
+          </div>
+        </header>
+    
+        <main id="main">
+          <!-- about -->
+          <h1 id="about-title">About</h1>
+          <section class="about">
+            <!-- Self1 -->
+            <section class="self self1">
+              <!-- side -->
+              <div class="self-side" id="side1">
+                <ul>
+                  <li><a href="#"><div class="self-side-list side-top">Top</div></a></li>
+                  <li><a href="#about-title"><div class="self-side-list side-about">About</div></a></li>
+                  <li><a href="#works-title"><div class="self-side-list side-works">Works</div></a></li>
+                  <li><a href="#contact-title"><div class="self-side-list side-contact">Contact</div></a></li>
+                </ul>
+              </div>
+
+              <!-- <div class="self-about">
+                <div class="name-info">
+                  <div class="name" id="name-En"><h2>Terayama Kyohei</h2></div>
+                  <div class="name" id="name-Ja"><h2>寺山 恭平</h2></div>
+                </div>
+                <div class="about-info">
+                  <p>1991年生まれ大阪府在住。</p>
+                  <p>大学・大学院で情報科学(C言語、java、Ruby、R言語等)を学習。</p>
+                  <p>現在は、TEOという名前で、主に HTML & CSS によるHP・LP作成・レスポンシブ化等を請け負っている。</p>
+                </div>
+              </div> -->
+              <!-- <div class="self-contents">
+                <div class="self-pic"><img src="image/self-pic.jpg"></div>
+              </div> -->
+
+              <!-- bootstrapで作成 -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- about -->
+                  <div class="self-about col-xl-5 offset-xl-2 col-md-6">
+                    <!-- Aboutのinfo部分 -->
+                    <div class="name-info">
+                      <div class="name" id="name-En"><h2>Terayama Kyohei</h2></div>
+                      <div class="name" id="name-Ja"><h2>寺山 恭平</h2></div>
+                    </div>
+                    <div class="about-info">
+                      <p>1991年生まれ大阪府在住。</p>
+                      <p>大学・大学院で情報科学(C言語、java、Ruby、R言語等)を学習。</p>
+                      <p>現在は、TEOという名前で、主に HTML & CSS によるHP・LP作成・レスポンシブ化等を請け負っている。</p>
+                    </div>
+                  </div>
+                  <!-- contents -->
+                  <div class="self-contents col-xl-5 col-md-6">
+                    <div class="self-pic"><img src="image/self-pic.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="space" id="space1"></div>
+
+            <!-- Self2 -->
+            <section class="self self2">
+              <div class="self-side" id="side2">
+                <ul>
+                  <li><a href="#"><div class="self-side-list side-top">Top</div></a></li>
+                  <li><a href="#about-title"><div class="self-side-list side-about">About</div></a></li>
+                  <li><a href="#works-title"><div class="self-side-list side-works">Works</div></a></li>
+                  <li><a href="#contact-title"><div class="self-side-list side-contact">Contact</div></a></li>
+                </ul>
+              </div>
+              
+              <!-- <div class="self-contents2">
+                <div class="self-pic"><img src="image/self-pic5.jpg"></div>
+              </div> -->
+              <!-- <div class="self-about2">
+                <div class="name-info">
+                  <h2 class="name" id="name-active">TEO</h2>
+                </div>
+                <div class="about-info">
+                  <p>海外からの依頼も請け負っており、</p>
+                  <p>日本国外向けに、TEOという活動名を使用している。</p>
+                  <p>由来は、シンガポールのスタバ店員が聞き間違えたものである。</p>
+                </div>
+              </div> -->
+
+              <!-- bootstrapで作成 -->
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- contents -->
+                  <div class="self-contents col-xl-5 col-md-6">
+                    <div class="self-pic"><img src="image/self-pic5.jpg"></div>
+                  </div>
+                  <!-- about -->
+                  <div class="self-about col-xl-5 col-md-6">
+                    <!-- Aboutのinfo部分 -->
+                    <div class="name-info">
+                      <div class="name"><h2 id="name-active">TEO</h2></div>
+                    </div>
+                    <div class="about-info about-info2">
+                      <p>海外からの依頼も請け負っており、</p>
+                      <p>日本国外向けに、TEOという活動名を使用している。</p>
+                      <p>由来は、シンガポールのスタバ店員が聞き間違えたものである。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+
+        <div class="space"></div>
+
+        <!-- works -->
+        <h1 id=works-title>Works</h1>
+        <section class="works">
+            <!-- 実績1 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <!-- <div class="work-overlay"> -->
+                <a href="#" class="work-overlay">
+                  <div class="work-content">COMPANY WEBPAGE</div>
+                  <p>作成したサンプルサイトです。</p>
+                  <p>レスポンシブ対応も実施済み。</p>
+                </a>
+              <!-- </div> -->
+              <div class="work-img">
+                <img src="image/work1.png" alt="一つ目の実績">
+              </div>
+            </div>
+
+            <!-- 実績2 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <div class="work-overlay">
+                <div class="work-content">COMPANY WEBPAGE</div>
+                <p>作成したサンプルサイトです。</p>
+              </div>
+              <div class="work-img">
+                <img src="image/work2.png" alt="二つ目の実績">
+              </div>
+            </div>
+
+            <!-- 実績3 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <div class="work-overlay">
+                <div class="work-content">Test</div>
+                <p>現在作成中です。</p>
+              </div>
+              <div class="work-img">
+                <img src="image/work3.png" alt="三つ目の実績">
+              </div>
+            </div>
+
+            <!-- 実績4 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <div class="work-overlay">
+                <div class="work-content">Test</div>
+                <p>現在作成中です。</p>
+              </div>
+              <div class="work-img">
+                <img src="image/work4.png" alt="四つ目の実績">
+              </div>
+            </div>
+
+            <!-- 実績5 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <div class="work-overlay">
+                <div class="work-content">Test</div>
+                <p>現在作成中です。</p>
+              </div>
+              <div class="work-img">
+                <img src="image/work5.png" alt="五つ目の実績">
+              </div>
+            </div>
+
+            <!-- 実績6 -->
+            <div class="work">
+              <!-- 実績として作成したHPなどのurlを貼り付ける -->
+              <div class="work-overlay">
+                <div class="work-content">Test</div>
+                <p>現在作成中です。</p>
+              </div>
+              <div class="work-img">
+                <img src="image/work6.png" alt="六つ目の実績">
+              </div>
+            </div>
+
+
+        </section>
+
+        <div class="space" id="space2"></div>
+
+        <!-- contact -->
+        <h1 id=contact-title>Contact</h1>
+        <section id="contact">
+          <div class="contact-list">
+            <ul>
+              <li><span class="fa fa-envelope"></span> Mail :  ky0725terayama@gmail.com</li>
+              <li>
+                <a class=twitter href="https://twitter.com/Gteo18">
+                  <i class="fab fa-twitter"></i> Twitter : Gteo18
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <nav class="footer-nav">
+              <!-- <ul id="footer-nav-icon">
+                <li class="logo"><a class="mail" href="#"><span class="fa fa-envelope"></span></a></li>
+                <li class="logo"><a class=twitter href="https://twitter.com/Gteo18"><i class="fab fa-twitter"></i></a></li>
+              </ul> -->
+              <ul class="footer-nav-ul">
+                <li class="footer-nav-list"><a href="#about-title">About</a></li>
+                <li class="footer-nav-list"><a href="#works-title">Works</a></li>
+                <li class="footer-nav-list"><a href="#contact-title">Contact</a></li>
+              </ul>
+            </nav>
+            <div id="copy-right">
+              <p>Copyright © Teo All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!--contentsここまで  -->
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>
