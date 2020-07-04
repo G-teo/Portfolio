@@ -48,7 +48,7 @@ html,body{
 }
 #welcome-img{
   display: none;
-  background:radial-gradient(circle at 50% 40%,rgba(200, 200, 200, .3) 5%,rgba(0, 10, 0, 0.948) 90%),url(image/welcome.jpg);
+  background:radial-gradient(circle at 50% 40%,rgba(200, 200, 200, .3) 5%,rgba(0, 10, 0, 0.948) 90%),url(welcome.jpg);
   background-size: cover;
   height:100%;
   width:100%;
@@ -173,7 +173,7 @@ html,body{
   text-align: center;
   /* background:radial-gradient(#d2d2d2 20%,#4f6457 80%);  */
     /* background:linear-gradient(45deg,rgba(20,20,20,.8),rgba(0, 30, 0,1.0)); */
-  /* ,url(image/self-pic3.jpg);
+  /* ,url(self-pic3.jpg);
   background-size: cover; */
 }
 .self{
