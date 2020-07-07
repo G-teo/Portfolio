@@ -26,9 +26,6 @@
   #main{
     margin-top: 60px;
   }
-  .self-side{
-    display: none;
-  }
   .name h2{
     font-size: 20px;
   }
@@ -57,7 +54,7 @@
     transform: translate(-50%,-50%);
   }
 }
-@media screen and (max-width:770px){
+@media screen and (max-width:768px){
   #welcome-message{
     position: absolute;
     top: 60%;
@@ -70,8 +67,11 @@
   #hidden-header-menu{
     display: block;
   }
+  .self-side{
+    display: none;
+  }
   .self-pic img{
-    width: 50%;
+    width: 80%;
   }
   .self-about p{
     text-align: center;
@@ -83,5 +83,14 @@
 @media screen and (max-width:400px){
   #copy-right p{
     font-size: 12px;
+  }
+  #welcome-message{
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    transform: translateX(0%);
+  }
+  .work{
+    width: 90%;
   }
 }
