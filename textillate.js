@@ -1,0 +1,3 @@
+$(function () {
+  $('#eftxt').textillate();
+  });

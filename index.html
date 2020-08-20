@@ -1,0 +1,452 @@
+<!DOCTYPE html> 
+<html lang="ja">
+  <head>
+    <meta charaset="utf-8">
+    <title>"Kyohei's Portfolio Site""</title>
+    <link rel="icon" href="favicon.ico"> 
+    <meta name="description" content="Teo's portfolio site">
+    <link rel="stylesheet" href="styles.css">
+    <!-- レスポンシブ対応 -->
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- formrun -->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <!-- 文字 -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">
+    <!--  -->
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery.inview.min.js"></script>
+    <script>
+      $(function(){
+        $(".inview_re").on("inview", function (event, isInView) {
+          if (isInView) {
+            $(this).stop().addClass("is-show");
+          } else {
+            $(this).stop().removeClass("is-show");
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript" src="jquery.textillate.js"></script>
+    <script type="text/javascript" src="jquery.lettering.js"></script>
+    <script type="text/javascript" src="textillate.js"></script>
+    <script>
+      $(function () {
+        $('.welcome-anime').textillate({
+          loop: true, //アニメーションの繰り返し
+          minDisplayTime: 5000, //アニメーションの間隔
+          initialDelay: 500, //アニメーション開始までの遅延
+          autoStart: true, //アニメーションの自動スタート
+        
+          //アニメーション開始時の設定
+          in: {
+            effect: 'swing', //エフェクトの指定
+            delayScale: 1.5, //各文字に適用される遅延係数
+            delay: 50, //文字ごとの遅延時間
+            sync: false, //アニメーションをすべての文字に同時に適用
+            shuffle: false, //ランダム表示
+            reverse: false, //エフェクトの逆再生(sync:trueとの併用は不可)
+            // callback: function () {} //コールバック関数
+          },
+        
+          //アニメーション終了時の設定
+          out: {
+            effect: 'wobble',
+            delayScale: 1.5,
+            delay: 50,
+            sync: false,
+            shuffle: false,
+            reverse: false,
+            // callback: function () {}
+          }
+        });
+
+        $('.ani').textillate({
+          loop: true, //アニメーションの繰り返し
+          minDisplayTime: 5000, //アニメーションの間隔
+          initialDelay: 10, //アニメーション開始までの遅延
+          autoStart: true, //アニメーションの自動スタート
+        
+          //アニメーション開始時の設定
+          in: {
+            effect: 'fadeInLeftBig', //エフェクトの指定
+            delayScale: 1.5, //各文字に適用される遅延係数
+            delay: 50, //文字ごとの遅延時間
+            sync: false, //アニメーションをすべての文字に同時に適用
+            shuffle: false, //ランダム表示
+            reverse: false, //エフェクトの逆再生(sync:trueとの併用は不可)
+            // callback: function () {} //コールバック関数
+          },
+        
+          //アニメーション終了時の設定
+          out: {
+            effect: 'wobble',
+            delayScale: 1.5,
+            delay: 50,
+            sync: false,
+            shuffle: false,
+            reverse: false,
+            // callback: function () {}
+          }
+          // callback: function () {},
+          // type: 'char'
+          // });
+        });
+      })
+    </script>
+  </head>
+  
+  <body>
+    <!-- welcome -->
+    <div id="welcome">
+      <div id="welcome-img"><!-- cssでbackground-imgを設定 --></div>
+      <div id="welcome-message">
+        <div id="welcome-word">
+          <span class="welcome-anime">Welcome to Kyohei's Portfolio Site</span>
+        </div>
+        <div id="welcome-link">GET IN TOUCH</div>
+      </div>
+    </div> 
+
+    <div id="contents">
+      <!-- header -->
+      <header id="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="#">
+              <!-- ロゴの場所 -->
+              <img src="image/terayama-logo.png" alt="terayama_logo">
+            </a>
+          </div>
+          <!--  -->
+          <nav class="header-nav">
+            <ul class="header-nav-ul">
+              <li class="header-nav-list"><a href="#ss-title">Services & Skills</a></li>
+              <li class="header-nav-list"><a href="#works-title">Works</a></li>
+              <li class="header-nav-list"><a href="#about-title">About</a></li>
+              <li class="header-nav-list"><a href="#contact-title">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- hidden-nav -->
+          <div id="hidden-header-menu"><span class="fas fa-bars"></span></div>
+          <nav id="hidden-header-nav">
+            <ul>
+              <li class="hidden-header-nav-list"><a href="#ss-title">Services & Skills</a></li>
+              <li class="hidden-header-nav-list"><a href="#works-title">Works</a></li>
+              <li class="hidden-header-nav-list"><a href="#about-title">About</a></li>
+              <li class="hidden-header-nav-list"><a href="#contact-title">Contact</a></li>
+            </ul>
+          </nav>
+          <!--  -->
+        </div>
+      </header>
+  
+      <main id="main">
+        <section class="first">
+          <div class="f-left">
+            <span class="ani ex">『想いを世界に発信する』</span>
+            <span class="ani">これはインターネットを用いて、</span>
+            <span class="ani">簡単に実現できます。</span>
+          </div>
+
+          <div class="f-right">
+            <span class="ani">Webサイト制作を通して、</span>
+            <span class="ani">そのお手伝いができればと思います。</span>                
+          </div>
+        </section>
+
+        <div class="side">
+          <ul>
+            <li><a href="#"><div class="side-list">Top</div></a></li>
+            <li><a href="#ss-title"><div class="side-list side-works">Services & Skills</div></a></li>
+            <li><a href="#works-title"><div class="side-list side-works">Works</div></a></li>
+            <li><a href="#about-title"><div class="side-list side-about">About</div></a></li>
+            <li><a href="#contact-title"><div class="side-list side-contact">Contact</div></a></li>
+          </ul>
+        </div>
+
+        <section class="ss">
+          <!-- Service & Skills -->
+          <div class="container-fluid">
+            <h1 id="ss-title">Services & Skills</h1>
+            <div class="service mx-auto mb-4 inview_re fadeIn_up">
+              <h2>Services</h2>
+              <div class="row">
+                <div class="col-md-6 col-xl-4 mb-4">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Webサイト制作</h3>
+                  <p>
+                    クライアント様のイメージをヒアリングし、ご要望通りのWebサイトをお作りいたします。<br>また、イメージが固まっていない場合も、打ち合わせ等からサイトの目的を推察し、最適なサイトをご提案します。
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-4 mb-4">
+                  <i class="fas fa-tablet-alt"></i>
+                  <h3>レスポンシブ対応</h3>
+                  <p>
+                    PCだけでなく、あらゆるデバイスからのアクセスを想定し、Webサイトのレスポンシブ対応を行います。<br>
+                    既存サイトのレスポンシブ化だけでもお気軽にお申し付けください。
+                  </p>
+                </div>
+                <div class="col-md-6 col-xl-4 mb-4">
+                  <i class="fas fa-code"></i>
+                  <h3>コーディング</h3>
+                  <p>
+                    デザインが固まっている場合、実装を短期間で実施いたします。<br>
+                    また、javascriptを用いた動きや効果をつけることで、Webサイトのインパクトをより高めることができます。<br>デザインの意図を理解し、これらのご提案も致します。
+                  </p>
+                </div>
+                <div class="col-md-6 offset-xl-2 col-xl-4 mb-4">
+                  <i class="fas fa-hand-holding-medical"></i>
+                  <h3>メンテナンス</h3>
+                  <p>
+                    制作したWebサイトのメンテナンスはもちろん、既存サイトの小改修、運用変更等も承ります。
+                  </p>
+                </div>
+                <div class="col-md-6 mx-auto col-xl-4 mb-4">
+                  <i class="fas fa-search"></i>
+                  <h3>SEO対策</h3>
+                  <p>
+                    手をかけたWebサイトも見てもらえなければ意味がありません。<br>検索エンジンで上位に表示されるためのSEO対策も承ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="skills mx-auto inview_re fadeIn_up">
+              <h2>Skills</h2>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 mb-4">
+                  <i class="fab fa-html5"></i>
+                  <h3>HTML</h3>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+                  <i class="fab fa-css3-alt"></i>
+                  <h3>CSS</h3>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+                  <i class="fab fa-bootstrap"></i>
+                  <h3>BootStrap</h3>
+                </div>
+                <div class="col-sm-6 offset-md-2 col-md-4 mb-4">
+                  <i class="fab fa-js-square"></i>
+                  <h3>java</h3>
+                </div>
+                <div class="offset-sm-3 col-sm-6 offset-md-1 col-md-4 mb-4">
+                  <i class="fab fa-python"></i>
+                  <h3>python</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+
+          <!-- works -->
+          <section class="works inview_re fadeIn_up">
+            <h1 id=works-title>Works</h1>
+            <div class="row">
+              <!-- 実績1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a target="_blank" href="https://g-teo.github.io/Sample-Site/">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        COMPANY WEBPAGE
+                      </div>
+                      <p>
+                        作成したサンプルサイト<br>
+                        HP作成のフレームワーク
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work1.png" alt="一つ目の実績">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 実績2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a target="_blank" href="https://g-teo.github.io/Sample-Company-Site/">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        COMPANY WEBPAGE
+                      </div>
+                      <p>
+                        作成したサンプルサイト<br>
+                        企業用Webページのフレームワーク<br>
+                        レスポンシブ対応済み
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work2.png" alt="二つ目の実績">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 実績3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a target="_blank" href="https://g-teo.github.io/Airbnb-copy-site/">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        Airbnb Copy Site
+                      </div>
+                      <p>
+                        Airbnbページの模写<br>
+                        レスポンシブ対応済み
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work3.png" alt="三つ目の実績">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 実績4 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a target="_blank" href="https://g-teo.github.io/Airbnb-copy-site2/">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        Airbnb Copy Site2
+                      </div>
+                      <p>
+                        Airbnbページの模写<br>
+                        動画の埋め込みを実装<br>
+                        レスポンシブ対応済み
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work4.png" alt="四つ目の実績">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 実績5 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a target="_blank" href="https://g-teo.github.io/frog-company/">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        Frog School
+                      </div>
+                      <p>
+                        Frog Schoolページの模写<br>
+                        動画の埋め込み・音声のストリーミング再生・フォーム等を実装<br>
+                        レスポンシブ対応済み
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work5.png" alt="五つ目の実績">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 実績6 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="work">
+                  <!-- 実績として作成したHPなどのurlを貼り付ける -->
+                  <a href="#">
+                    <div class="work-overlay">
+                      <div class="work-content">
+                        Coming Soon
+                      </div>
+                      <p>
+                        Coming Soon
+                      </p>
+                    </div>
+                  </a>
+                  <div class="work-img">
+                    <img src="image/work6.png" alt="六つ目の実績">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- about -->
+          <section class="about inview_re fadeIn_up">
+            <h1 id="about-title">About</h1>
+            <div class="row info mx-auto">
+              <div class="info col-md-7 col-sm-12">
+                <div class="name-info">
+                  <div class="name" id="name-En"><h2>Terayama Kyohei</h2></div>
+                  <div class="name" id="name-Ja"><h2>寺山 恭平</h2></div>
+                </div>
+                <div class="about-info">
+                  <ul>
+                    <li><p>1991年生まれ大阪府在住。</p></li>
+                    <li><p>大学院まで情報科学(C言語、java、Ruby、R言語等)を学習。</p></li>
+                    <li><p>卒業後、一度離れたものの、インターネットを通した新たなビジネスに惹かれ、Webデザイナー・コーダーとして活動を開始。</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="about-pic"><img src="image/self-pic.jpg"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- contact -->
+          <section class="contact inview_re fadeIn_up">
+            <h1 id=contact-title>Contact</h1>
+            <div class="contact-list">
+              <ul>
+                <li>
+                  <span class="fa fa-envelope"></span> Mail :  ky0725terayama@gmail.com
+                </li>
+                <li>
+                  <a class=twitter href="https://twitter.com/Gteo18">
+                    <i class="fab fa-twitter"></i> Twitter : Gteo18
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+      </main>
+
+      <!-- footer -->
+      <footer id="footer">
+          <!-- <nav class="footer-nav">
+            <ul class="footer-nav-ul">
+              <li class="footer-nav-list"><a href="#about-title">About</a></li>
+              <li class="footer-nav-list"><a href="#works-title">Works</a></li>
+              <li class="footer-nav-list"><a href="#contact-title">Contact</a></li>
+            </ul>
+          </nav> -->
+          <div id="copy-right">
+            <p>Copyright © Teo All Rights Reserved.</p>
+          </div>
+      </footer>
+
+      <!--contentsここまで  -->
+    </div>
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>
